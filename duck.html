@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web is a duck</title>
+</head>
+	<style type="text/css">
+
+		body{
+			padding: 0;
+			margin:0;
+			overflow: hidden;
+			background-color: #50c7ed;
+
+			
+		}
+		
+
+		.duck{
+			width: 600px;
+			position: absolute;
+			left: 100%;
+			top: 50%;
+			z-index: 2;
+			
+			
+			
+		}
+		.duck_one{
+		
+			position: absolute;
+			width: 600px;
+			left: 100%;
+			top: 50%;
+			z-index: 1;
+			
+			
+		}
+		.duck_two{
+			position: absolute;
+			width: 600px;
+			left: 100vw;
+			top: 65vh;
+			display: none;
+		}
+
+		.duck_three{
+			position: absolute;
+			width: 600px;
+			left: 100vw;
+			top: 40vh;
+			display: none;
+		}
+		.duck_four{
+			position: absolute;
+			width: 600px;
+			left: 100vw;
+			top: 40vh;
+			display: none;
+		}
+
+		@media (max-width: 1400px){
+
+			.duck{
+				z-index: 1;}
+			.duck_one{
+				
+				z-index: 2;
+				}
+
+		}
+		@media (max-width: 1200px){
+			.duck{display: none;}
+			.duck_one{display: none;}
+			.duck_two{display: block;}
+			body{background-color: orange;}
+
+		}
+
+		@media (max-width: 1000px){
+			.duck{display: none;}
+			.duck_one{display: none;}
+			.duck_two{display: none;}
+			.duck_three{display: block;}
+
+		}
+		@media (max-width: 800px){
+			.duck{display: none;}
+			.duck_one{display: none;}
+			.duck_two{display: none;}
+			.duck_three{display: none;}
+			.duck_four{display: block;}
+
+		}
+	</style>
+<body>
+	<img class="duck" src="duck.png">
+	<img class="duck_one" src="duck1.png">
+	<img class="duck_two" src="duck2.png">
+	<img class="duck_three" src="duck3.png">
+	<a href="index 2.html">
+	<img class="duck_four" src="duck4.png"></a>
+	
+</body>
+</html>

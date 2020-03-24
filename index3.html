@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>responsive01</title>
+</head>
+	<style type="text/css">
+
+		
+		#img{
+			position: absolute;
+			left: 50vw;
+			top: 25vh;
+			width: 20vw;
+		}
+		#p{
+			position: absolute;
+			left: 25vw;
+			top: 50vh;
+			font-size: 3em;
+
+		}
+
+		@media (max-width: 1200px){
+		#img{
+			position: absolute;
+			left: 0vw;
+			top: 0vh;
+			width: 20vw;
+		}
+		#p{
+			position: absolute;
+			left: 100vw;
+			top: 50vh;
+			font-size: 5em;
+			animation: move1 3s forwards;
+			/*animation-iteration-count: infinite;*/
+
+		}
+		@keyframes move1{
+			from
+		{
+			position: absolute;
+			left: 100vw;
+			top: 50vh;
+			font-size: 5em;
+			}
+			to{
+			position: absolute;
+			left: 0vw;
+			top: 50vh;
+			font-size: 5em;
+			}
+		}
+	}
+		@media (max-width: 1000px){
+				#img{
+				position: absolute;
+				left: 0vw;
+				top: 80vh;
+				width: 80vw;
+			}
+			#p{
+				position: absolute;
+				left: 25vw;
+				top: 50vh;
+				font-size: 1em;
+
+			}
+		}
+		@media (max-width: 600px){
+			#img{
+			position: absolute;
+			left: 0vw;
+			top: 50vh;
+			width: 100vw;
+			height: 10vh;
+		}
+		#p{
+			position: absolute;
+			transform:translate(25vw, -25vh);
+			
+			
+			font-size: 20px;
+			color: blue;
+			font-family: sans-serif;
+
+		}
+		}
+
+		
+	</style>
+<body>
+	<a href="index4.html">
+	<img id="img" src="Ed_Panar_ITV_47.jpg"></a>
+	<p id="p">"In The Vicinity" by Photographer Ed Panar</p>
+
+
+</body>
+</html>
